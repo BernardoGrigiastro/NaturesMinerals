@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "name": "natureminerals:blood_lava",
+      "amount": 432
+    },
+    {
+      "name": "tconstruct:molten_blaze",
+      "amount": 432
+    }
+  ],
+  "result": {
+    "fluid": "natureminerals:blazing_blood",
+    "amount": 576
+  },
+  "temperature": 1500
+}

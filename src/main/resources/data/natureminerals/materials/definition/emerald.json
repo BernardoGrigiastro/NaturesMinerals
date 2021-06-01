@@ -1,0 +1,9 @@
+{
+  "craftable": false,
+  "tier": 3,
+  "sortOrder": 2,
+  "fluid": "tconstruct:molten_emerald",
+  "fluidPerUnit": 144,
+  "textColor": "#41F384",
+  "temperature": 1000
+}

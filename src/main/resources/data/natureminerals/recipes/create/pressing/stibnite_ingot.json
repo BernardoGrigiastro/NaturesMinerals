@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/stibnite"
+    }
+  ],
+  "results": [
+    {
+      "item": "natureminerals:stibnite_sheet"
+    }
+  ]
+}

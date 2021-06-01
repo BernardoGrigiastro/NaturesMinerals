@@ -1,0 +1,9 @@
+{
+  "craftable": false,
+  "tier": 8,
+  "sortOrder": 2,
+  "fluid": "natureminerals:molten_astrite",
+  "fluidPerUnit": 144,
+  "textColor": "#FF3222",
+  "temperature": 2500
+}

@@ -1,0 +1,9 @@
+{
+  "craftable": false,
+  "tier": 9,
+  "sortOrder": 2,
+  "fluid": "natureminerals:molten_thounite",
+  "fluidPerUnit": 144,
+  "textColor": "#FBBE53",
+  "temperature": 2750
+}

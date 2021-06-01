@@ -1,0 +1,9 @@
+{
+  "craftable": false,
+  "tier": 6,
+  "sortOrder": 2,
+  "fluid": "natureminerals:molten_kunzite",
+  "fluidPerUnit": 144,
+  "textColor": "#CF6284",
+  "temperature": 1500
+}

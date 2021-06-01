@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/thounite"
+    }
+  ],
+  "results": [
+    {
+      "item": "natureminerals:thounite_sheet"
+    }
+  ]
+}

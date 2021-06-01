@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/uvarovite"
+    }
+  ],
+  "results": [
+    {
+      "item": "natureminerals:uvarovite_sheet"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "craftable": false,
+  "tier": 7,
+  "sortOrder": 2,
+  "fluid": "natureminerals:molten_stibnite",
+  "fluidPerUnit": 144,
+  "textColor": "#B7C3DE",
+  "temperature": 2000
+}
