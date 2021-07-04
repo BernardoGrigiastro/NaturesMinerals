@@ -74,8 +74,8 @@ public class BlockInit {
     public static final RegistryObject<FlowingFluidBlock> BLOOD_LAVA = BLOCKS
             .register("bloodlava_block", () -> new FlowingFluidBlock(FluidInit.BLOODLAVA,
                     Block.Properties.of(Material.LAVA).lightLevel((state) -> {	return 15;	}).randomTicks().strength(100.0F).noDrops()));
-    public static final RegistryObject<FlowingFluidBlock> BLAZING_BLOOD = BLOCKS
-            .register("blazingblood_block", () -> new FlowingFluidBlock(FluidInit.BLAZINGBLOOD,
+    public static final RegistryObject<FlowingFluidBlock> SCORCHING_BLOOD = BLOCKS
+            .register("scorchingblood_block", () -> new FlowingFluidBlock(FluidInit.SCORCHINGBLOOD,
                     Block.Properties.of(Material.LAVA).lightLevel((state) -> {	return 15;	}).randomTicks().strength(100.0F).noDrops()));
     
 }

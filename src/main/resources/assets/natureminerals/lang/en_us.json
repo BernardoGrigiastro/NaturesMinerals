@@ -86,7 +86,7 @@
 	"item.natureminerals.enchanted_thounite_apple": "Enchanted Thounite Apple",
 
 	"item.natureminerals.bloodlava_bucket": "Blood Lava Bucket",
-	"item.natureminerals.blazingblood_bucket": "Blazing Blood Bucket",
+	"item.natureminerals.scorchingblood_bucket": "Scorching Blood Bucket",
 
 	"block.natureminerals.uvarovite_block": "Block of Uvarovite",
 	"block.natureminerals.uvarovite_ore": "Uvarovite Ore",
@@ -113,7 +113,7 @@
 	"material.natureminerals.thounite": "Thounite",
 
 	"fluid.natureminerals.blood_lava": "Blood Lava",
-	"fluid.natureminerals.blazing_blood": "Blazing Blood",
+	"fluid.natureminerals.scorching_blood": "Scorching Blood",
 	"fluid.natureminerals.molten_uvarovite": "Molten Uvarovite",
 	"fluid.natureminerals.molten_kunzite": "Molten Kunzite",
 	"fluid.natureminerals.molten_stibnite": "Molten Stibnite",

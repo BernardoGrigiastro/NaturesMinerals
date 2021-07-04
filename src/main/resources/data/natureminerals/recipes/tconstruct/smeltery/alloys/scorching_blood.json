@@ -6,12 +6,12 @@
       "amount": 432
     },
     {
-      "name": "tconstruct:molten_blaze",
+      "name": "tconstruct:blazing_blood",
       "amount": 432
     }
   ],
   "result": {
-    "fluid": "natureminerals:blazing_blood",
+    "fluid": "natureminerals:scorching_blood",
     "amount": 576
   },
   "temperature": 1500

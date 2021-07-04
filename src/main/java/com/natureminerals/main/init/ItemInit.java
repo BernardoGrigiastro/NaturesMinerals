@@ -119,8 +119,8 @@ public class ItemInit {
 	public static final RegistryObject<Item> BLOODLAVA_BUCKET = ITEMS.register("bloodlava_bucket",
             () -> new BucketItem(FluidInit.BLOODLAVA,
                     new BucketItem.Properties().craftRemainder(Items.BUCKET).stacksTo(1).tab(ItemGroup.TAB_MISC)));
-	public static final RegistryObject<Item> BLAZINGBLOOD_BUCKET = ITEMS.register("blazingblood_bucket",
-            () -> new BucketItem(FluidInit.BLAZINGBLOOD,
+	public static final RegistryObject<Item> SCORCHINGBLOOD_BUCKET = ITEMS.register("scorchingblood_bucket",
+            () -> new BucketItem(FluidInit.SCORCHINGBLOOD,
                     new BucketItem.Properties().craftRemainder(Items.BUCKET).stacksTo(1).tab(ItemGroup.TAB_MISC)));
 	
 	//block items

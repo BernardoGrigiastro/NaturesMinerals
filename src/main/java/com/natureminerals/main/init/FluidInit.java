@@ -22,10 +22,10 @@ public class FluidInit {
     public static final ResourceLocation BLOOD_FLOW = new ResourceLocation(NatureMinerals.MODID,
     		"blocks/fluids/blood_lava_flow");
     
-    public static final ResourceLocation BLAZING_STILL = new ResourceLocation(NatureMinerals.MODID,
-    		"blocks/fluids/blazing_blood_still");
-    public static final ResourceLocation BLAZING_FLOW = new ResourceLocation(NatureMinerals.MODID,
-    		"blocks/fluids/blazing_blood_flow");
+    public static final ResourceLocation SCORCHING_STILL = new ResourceLocation(NatureMinerals.MODID,
+    		"blocks/fluids/scorching_blood_still");
+    public static final ResourceLocation SCORCHING_FLOW = new ResourceLocation(NatureMinerals.MODID,
+    		"blocks/fluids/scorching_blood_flow");
     		
 	
 	public static final DeferredRegister<Fluid> FLUIDS = DeferredRegister.create(ForgeRegistries.FLUIDS, NatureMinerals.MODID);
@@ -63,10 +63,10 @@ public class FluidInit {
     public static final RegistryObject<ForgeFlowingFluid.Flowing> flowing_BLOODLAVA = FLUIDS.register("flowing_bloodlava",
             () -> new ForgeFlowingFluid.Flowing(makeBloodlavaProperties()));
     
-    public static final RegistryObject<ForgeFlowingFluid.Source> BLAZINGBLOOD = FLUIDS.register("blazing_blood",
-            () -> new ForgeFlowingFluid.Source(makeBlazingBloodProperties()));
-    public static final RegistryObject<ForgeFlowingFluid.Flowing> flowing_BLAZINGBLOOD = FLUIDS.register("flowing_blazingblood",
-            () -> new ForgeFlowingFluid.Flowing(makeBlazingBloodProperties()));
+    public static final RegistryObject<ForgeFlowingFluid.Source> SCORCHINGBLOOD = FLUIDS.register("scorching_blood",
+            () -> new ForgeFlowingFluid.Source(makeScorchingBloodProperties()));
+    public static final RegistryObject<ForgeFlowingFluid.Flowing> flowing_SCORCHINGBLOOD = FLUIDS.register("flowing_scorchingblood",
+            () -> new ForgeFlowingFluid.Flowing(makeScorchingBloodProperties()));
 
     
     //materials
@@ -113,11 +113,11 @@ public class FluidInit {
     				.bucket(ItemInit.BLOODLAVA_BUCKET).block(BlockInit.BLOOD_LAVA).explosionResistance(1000F).tickRate(9);
     }
     
-    private static ForgeFlowingFluid.Properties makeBlazingBloodProperties() {
-    	return new ForgeFlowingFluid.Properties(BLAZINGBLOOD, flowing_BLAZINGBLOOD,
-    			FluidAttributes.builder(BLAZING_STILL, BLAZING_FLOW)
+    private static ForgeFlowingFluid.Properties makeScorchingBloodProperties() {
+    	return new ForgeFlowingFluid.Properties(SCORCHINGBLOOD, flowing_SCORCHINGBLOOD,
+    			FluidAttributes.builder(SCORCHING_STILL, SCORCHING_FLOW)
     					.luminosity(15).density(3000).viscosity(6000).temperature(3000).sound(SoundEvents.BUCKET_FILL_LAVA, SoundEvents.BUCKET_EMPTY_LAVA))
-    				.bucket(ItemInit.BLAZINGBLOOD_BUCKET).block(BlockInit.BLAZING_BLOOD).explosionResistance(1000F).tickRate(9);
+    				.bucket(ItemInit.SCORCHINGBLOOD_BUCKET).block(BlockInit.SCORCHING_BLOOD).explosionResistance(1000F).tickRate(9);
     }
     
 }
