@@ -1,9 +1,23 @@
 {
+  "condition": {
+    "values": [
+      {
+        "prop": "force_integration_materials",
+        "type": "tconstruct:config"
+      },
+      {
+        "value": {
+          "tag": "forge:gems/diamond",
+          "type": "forge:tag_empty"
+        },
+        "type": "forge:not"
+      }
+    ],
+    "type": "forge:or"
+  },
   "craftable": false,
   "tier": 3,
   "sortOrder": 2,
-  "fluid": "tconstruct:molten_diamond",
-  "fluidPerUnit": 144,
   "textColor": "#4AEDD9",
-  "temperature": 1000
+  "hidden": false
 }

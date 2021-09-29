@@ -1,5 +1,6 @@
 package com.natureminerals.main.modifiers;
 
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -7,6 +8,7 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.DamageSource;
 import slimeknights.tconstruct.library.modifiers.Modifier;
+import slimeknights.tconstruct.library.tools.context.ToolAttackContext;
 import slimeknights.tconstruct.library.tools.nbt.IModifierToolStack;
 
 public class LifeStealModifier extends Modifier {
@@ -16,16 +18,18 @@ public class LifeStealModifier extends Modifier {
 	}
 	
 	@Override
-	public float applyLivingDamage(IModifierToolStack tool, int level, LivingEntity attacker, LivingEntity target, float baseDamage, float damage, boolean isCritical, boolean fullyCharged) {
-		target.getLastDamageSource();
-		DamageSource.indirectMagic(attacker, target);
+	public float getEntityDamage(IModifierToolStack tool, int level, ToolAttackContext context, float baseDamage, float damage) {
+		context.getAttacker().getLastDamageSource();
+		DamageSource.indirectMagic(context.getAttacker(), context.getTarget());
 		return damage;
 	}
 	
 	@Override
-	public int afterLivingHit(IModifierToolStack tool, int level, LivingEntity attacker, LivingEntity target, float damageDealt, boolean isCritical, float cooldown) {
+	public int afterEntityHit(IModifierToolStack tool, int level, ToolAttackContext context, float damageDealt) {
+		Entity target = context.getTarget();
+		LivingEntity attacker = context.getAttacker();
 		if(attacker instanceof PlayerEntity && target instanceof MobEntity) {
-			if(cooldown > 0.9 && damageDealt > 0) {
+			if(context.getCooldown() > 0.9 && damageDealt > 0) {
 				attacker.addEffect(new EffectInstance(Effects.ABSORPTION, level * 50, (int) (damageDealt/4)));
 			}
 		}

@@ -1,9 +1,23 @@
 {
+	"condition": {
+    "values": [
+      {
+        "prop": "force_integration_materials",
+        "type": "tconstruct:config"
+      },
+      {
+        "value": {
+          "tag": "forge:ingots/thounite",
+          "type": "forge:tag_empty"
+        },
+        "type": "forge:not"
+      }
+    ],
+    "type": "forge:or"
+  },
   "craftable": false,
   "tier": 9,
   "sortOrder": 2,
-  "fluid": "natureminerals:molten_thounite",
-  "fluidPerUnit": 144,
   "textColor": "#FBBE53",
-  "temperature": 2750
+  "hidden": false
 }

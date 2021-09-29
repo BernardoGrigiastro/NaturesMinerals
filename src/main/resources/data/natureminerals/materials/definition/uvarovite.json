@@ -1,9 +1,23 @@
 {
+	"condition": {
+    "values": [
+      {
+        "prop": "force_integration_materials",
+        "type": "tconstruct:config"
+      },
+      {
+        "value": {
+          "tag": "forge:ingots/uvarovite",
+          "type": "forge:tag_empty"
+        },
+        "type": "forge:not"
+      }
+    ],
+    "type": "forge:or"
+  },
   "craftable": false,
   "tier": 5,
   "sortOrder": 2,
-  "fluid": "natureminerals:molten_uvarovite",
-  "fluidPerUnit": 144,
   "textColor": "#30D513",
-  "temperature": 1250
+  "hidden": false
 }

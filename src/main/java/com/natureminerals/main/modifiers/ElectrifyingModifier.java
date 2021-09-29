@@ -1,5 +1,6 @@
 package com.natureminerals.main.modifiers;
 
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.LightningBoltEntity;
@@ -9,6 +10,7 @@ import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.event.entity.player.PlayerEvent.BreakSpeed;
 import slimeknights.tconstruct.library.modifiers.Modifier;
+import slimeknights.tconstruct.library.tools.context.ToolAttackContext;
 import slimeknights.tconstruct.library.tools.nbt.IModifierToolStack;
 
 public class ElectrifyingModifier extends Modifier {
@@ -18,7 +20,9 @@ public class ElectrifyingModifier extends Modifier {
 	}
 	
 	@Override
-	public int afterLivingHit(IModifierToolStack tool, int level, LivingEntity attacker, LivingEntity target, float damageDealt, boolean isCritical, float cooldown) {
+	public int afterEntityHit(IModifierToolStack tool, int level, ToolAttackContext context, float damageDealt) {
+		Entity target = context.getTarget();
+		LivingEntity attacker = context.getAttacker();
 		if(target.level instanceof ServerWorld) {
 			BlockPos pos = target.blockPosition();
 			if (target.level.canSeeSky(pos)) {

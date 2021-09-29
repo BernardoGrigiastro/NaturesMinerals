@@ -1,9 +1,11 @@
 package com.natureminerals.main.modifiers;
 
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import slimeknights.tconstruct.library.modifiers.Modifier;
+import slimeknights.tconstruct.library.tools.context.ToolAttackContext;
 import slimeknights.tconstruct.library.tools.nbt.IModifierToolStack;
 
 public class VenomousModifier extends Modifier {
@@ -14,9 +16,11 @@ public class VenomousModifier extends Modifier {
 	}
 	
 	@Override
-	public int afterLivingHit(IModifierToolStack tool, int level, LivingEntity attacker, LivingEntity target, float damageDealt, boolean isCritical, float cooldown) {
-		if(cooldown > 0.9 && damageDealt > 0) {
-			target.addEffect(new EffectInstance(Effects.POISON, level * 50, 0));
+	public int afterEntityHit(IModifierToolStack tool, int level, ToolAttackContext context, float damageDealt) {
+		Entity target = context.getTarget();
+		LivingEntity attacker = context.getAttacker();
+		if(context.getCooldown() > 0.9 && damageDealt > 0) {
+			context.getLivingTarget().addEffect(new EffectInstance(Effects.POISON, level * 50, 0));
 		}
 		return 0;
 	}

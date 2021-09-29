@@ -7,6 +7,7 @@ import net.minecraft.entity.ai.attributes.Attribute;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.ai.attributes.AttributeModifier.Operation;
 import net.minecraft.entity.ai.attributes.Attributes;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.util.Direction;
 import net.minecraftforge.event.entity.player.PlayerEvent.BreakSpeed;
 import slimeknights.tconstruct.library.modifiers.Modifier;
@@ -27,7 +28,7 @@ public class AstralSpeedModifier extends Modifier {
 	}
 	
 	@Override
-	public void addAttributes(IModifierToolStack tool, int level, BiConsumer<Attribute, AttributeModifier> consumer) {
+	public void addAttributes(IModifierToolStack tool, int level, EquipmentSlotType slot, BiConsumer<Attribute, AttributeModifier> consumer) {
 		consumer.accept(Attributes.MOVEMENT_SPEED, new AttributeModifier(ATTRIBUTE_UUID, "astral_speed", level * 0.1, Operation.MULTIPLY_BASE));
 	}
 }
