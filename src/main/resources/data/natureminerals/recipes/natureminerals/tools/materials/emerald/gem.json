@@ -1,14 +1,5 @@
 {
   "type": "tconstruct:material",
-  "conditions": [
-    {
-      "value": {
-        "tag": "forge:gems/emerald",
-        "type": "forge:tag_empty"
-      },
-      "type": "forge:not"
-    }
-  ],
   "ingredient": {
     "tag": "forge:gems/emerald"
   },

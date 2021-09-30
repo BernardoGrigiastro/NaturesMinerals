@@ -1,6 +1,6 @@
 {
   "type": "tconstruct:material",
-  "conditions": [
+   "conditions": [
     {
       "value": {
         "tag": "forge:storage_blocks/diamond",
@@ -14,5 +14,8 @@
   },
   "value": 9,
   "needed": 1,
-  "material": "natureminerals:diamond"
+  "material": "natureminerals:diamond",
+  "leftover": {
+    "tag": "forge:gems/diamond"
+  }
 }

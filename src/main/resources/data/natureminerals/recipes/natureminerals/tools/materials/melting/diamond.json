@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "natureminerals:diamond",
+  "temperature": 1500,
+  "result": {
+    "fluid": "tconstruct:molten_diamond",
+    "amount": 250
+  }
+}
