@@ -2,7 +2,6 @@ package com.natureminerals.main.init;
 
 import com.natureminerals.main.NatureMinerals;
 
-import net.minecraft.fluid.FlowingFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvents;
@@ -11,7 +10,6 @@ import net.minecraftforge.fluids.ForgeFlowingFluid;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import slimeknights.mantle.registration.object.FluidObject;
 
 public class FluidInit {
     public static final ResourceLocation MOLTEN_STILL = new ResourceLocation(NatureMinerals.MODID,

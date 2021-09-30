@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:material_fluid",
   "fluid": {
-    "tag": "natureminerals:molten_astrite",
+    "name": "natureminerals:molten_astrite",
     "amount": 144
   },
   "temperature": 2500,

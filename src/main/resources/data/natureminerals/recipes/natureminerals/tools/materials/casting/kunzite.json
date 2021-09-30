@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:material_fluid",
   "fluid": {
-    "tag": "natureminerals:molten_kunzite",
+    "name": "natureminerals:molten_kunzite",
     "amount": 144
   },
   "temperature": 1500,

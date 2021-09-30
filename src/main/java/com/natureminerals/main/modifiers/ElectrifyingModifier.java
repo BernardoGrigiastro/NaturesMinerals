@@ -1,9 +1,12 @@
 package com.natureminerals.main.modifiers;
 
+import java.util.Collection;
+
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.LightningBoltEntity;
+import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.vector.Vector3d;
@@ -29,6 +32,7 @@ public class ElectrifyingModifier extends Modifier {
 				LightningBoltEntity lightningBolt = EntityType.LIGHTNING_BOLT.create(target.level);
 	            lightningBolt.moveTo(Vector3d.atBottomCenterOf(pos));
 	            target.level.addFreshEntity(lightningBolt);
+	            attacker.captureDrops();
 			}
 		}
 		return 0;

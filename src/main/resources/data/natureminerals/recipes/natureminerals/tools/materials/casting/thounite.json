@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:material_fluid",
   "fluid": {
-    "tag": "natureminerals:molten_thounite",
+    "name": "natureminerals:molten_thounite",
     "amount": 144
   },
   "temperature": 2750,
